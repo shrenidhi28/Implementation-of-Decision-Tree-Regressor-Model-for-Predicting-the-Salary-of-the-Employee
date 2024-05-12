@@ -1,4 +1,4 @@
-# Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee
+# EXP-7 Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee
 
 ## AIM:
 To write a program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee.
@@ -20,6 +20,9 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 Program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee.
 Developed by: C.Shrenidhi
 RegisterNumber:  212223040196
+```
+
+```
 
 
 import pandas as pd
@@ -50,67 +53,88 @@ dt.predict([[5,6]])
 ```
 
 ## Output:
-![Decision Tree Regressor Model for Predicting the Salary of the Employee](sam.png)
+
 <br>
 <br>
 
-data.head()
+# data.head()
 <br>
 <br>
-<img width="248" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/f4019ab5-fb1a-4828-86cb-66574f37edfa">
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/090dc6a4-4081-4cad-9efa-8240869e0d8a)
+
 <br>
 <br>
-data.info()
+
+# data.info()
+
 <br>
 <br>
-<img width="247" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/89d5e508-9bf2-4adb-8938-7c24d39d83b4">
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/d785a975-69b2-4d35-9c42-eb446920f67f)
+
 <br>
 <br>
-data.isnull().sum()
+
+# data.isnull().sum()
+
 <br>
 <br>
-<img width="92" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/141eb5dd-5309-43b9-a7b3-9c425f305b10">
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/4e59774b-f7c3-4ec9-b93c-c0bce6e82656)
+
 <br>
 <br>
-data['Position']=le.fit_transform(data['Position'])
-<br>
-data.head()
-<br>
-<br>
-<img width="175" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/c600f823-4f0f-431d-9fc4-610b4831996e">
+
+# x data
+
 <br>
 <br>
-x=data[['Level','Position']]
-<br>
-y=data['Salary']
-<br>
-x.head()
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/3250258a-74c8-4689-b3d1-38dfed7f5615)
+
 <br>
 <br>
-<img width="175" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/e5a42039-3c21-4897-892b-1ab7536967c4">
+
+# y data
+
 <br>
 <br>
-from sklearn import metrics
-<br>
-mse=metrics.mean_squared_error(y_test,y_pred)
-<br>
-mse
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/9ca4a2d2-fe82-48f0-b461-709544347140)
+
 <br>
 <br>
-<img width="175" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/a24c8f58-69b3-4b71-af54-ecb09594f212">
+
+# y_pred
 <br>
 <br>
-r2=metrics.r2_score(y_test,y_pred)
-<br>
-r2
-<br>
-<br>
-<img width="153" alt="image" src="https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/e23e19b5-de39-4c92-b20f-476e301595aa">
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/b2b3bb90-b3a5-46c8-a79e-9f1046818fe6)
+
 <br>
 <br>
-/usr/local/lib/python3.10/dist-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
-  warnings.warn(
-array([80000])
+
+# mse
+
+<br>
+<br>
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/28a6ef84-877c-4d97-a6e6-e371e91323be)
+
+<br>
+<br>
+
+# r2=metrics.r2_score(y_test,y_pred)
+
+<br>
+<br>
+
+![image](https://github.com/shrenidhi28/Implementation-of-Decision-Tree-Regressor-Model-for-Predicting-the-Salary-of-the-Employee/assets/155261096/c8b9e1e0-df68-45b1-98cd-29ee5f373409)
+
+<br>
+<br>
+
 
 
 
